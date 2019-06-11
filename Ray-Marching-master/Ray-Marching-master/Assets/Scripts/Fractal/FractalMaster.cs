@@ -64,7 +64,6 @@ public class FractalMaster : MonoBehaviour {
         fractalShader.SetMatrix ("_CameraToWorld", cam.cameraToWorldMatrix);
         fractalShader.SetMatrix ("_CameraInverseProjection", cam.projectionMatrix.inverse);
         fractalShader.SetVector ("_LightDirection", directionalLight.transform.forward);
-
     }
 
     void InitRenderTexture () {
